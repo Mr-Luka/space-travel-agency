@@ -1245,4 +1245,45 @@ section.destinations > div:hover p {
     }
     
     
-    
+    /* MARS */
+    #destination span{
+        font-size: 8.5rem;
+        transition: 0.2s;
+    }
+    p#mars-catch {
+        font-size: 0.8rem;
+        margin-top: 17%;
+    }
+    #destination-p{
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+    #destination-p1{
+        margin-top: 73%;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+    #destination-p2{
+        margin-top: 70%;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+    #destination-p3{
+        margin-top: 140%;
+        left: 23%;
+        font-size: 1.5rem;
+    }
+    #destination-promo-video4{
+        width: 60%;
+        left: 21%;
+        margin-top: 72%;
+        transition: 0.2s;
+    }
+    #destination-promo-video3{
+        margin-top: 135%;
+        width: 60%;
+        left: 21%;
+        transition: 0.2s;
+    }
+}
+
