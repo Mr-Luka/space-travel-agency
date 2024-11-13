@@ -1287,3 +1287,148 @@ section.destinations > div:hover p {
     }
 }
 
+/* Media Query for Mobile (767px and below) */
+@media screen and (max-width: 767px) {
+    /* Adjust font sizes and layout for smaller screens */
+    .sign-up-form {
+        top: 20%;
+        left: 5%;
+        max-width: 90%;
+    }
+
+    .header {
+        left: 1rem;
+        top: 0.5rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar {
+        padding: 0.5rem 2rem 0.5rem 1rem;
+    }
+
+    .nav-ul li {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .intro-text h2 {
+        font-size: 4rem;
+        width: 90%;
+        left: 0;
+        margin-top: -10rem;
+    }
+
+
+    .intro-text p {
+        font-size: 1.4rem;
+        margin-top: 28rem;
+    }
+
+    .explore-div {
+        margin-top: 30rem;
+        padding: 1rem;
+        left: 45%;
+
+    }
+
+    #explore-btn {
+        font-size: 2rem;
+        right: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    #space {
+        font-size: 8rem;
+        right: 4rem;
+        margin-top: 9rem;
+    }
+
+    .destinations {
+        grid-template-columns: 1fr;
+    }
+
+         /* PLANTIA */
+    .plantia-segment {
+        margin-top: 0%;
+        font-size: 5rem;
+    }
+    
+    p#catch.plantia-catch {
+        font-size: 1rem;
+        margin-top: 5%;
+        transition: 0.2s;
+    }
+    #destination-plantia,
+    #destination-plantia-1,
+    #destination-plantia-2 {
+        font-size: 1.1rem;
+        transition: 0.2s;
+    }
+    #destination-plantia-1,
+    #destination-plantia-2{
+        margin-top: 75%;
+        transition: 0.2s;
+    }
+
+    #destination-plantia{
+        margin-top: 15%;
+        transition: 0.2s;
+    }
+    #destination-plantia-1{
+        margin-top: 145%;
+        width: 90%;
+        transition: 0.2s;
+    }
+    #destination-plantia-2{
+        left: 45%;
+        margin-top: 230%;
+        width: 50%;
+        transition: 0.2s;
+    }
+    #destination-plantia-3 {
+        margin-top: 330%;
+        width: 40%;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        box-shadow: none
+    }
+    #destination-promo-video-plantia-1{
+        margin-top: 100%;
+        width: 40%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-2{
+        margin-top: 330%;
+        left: 45%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-3{
+        margin-top: 100%;
+        left: 55%;
+        width: 40%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-4{
+        margin-top: 135%;
+        width: 55%;
+        left: 25%;
+        z-index: 1;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-5{
+        margin-top: 285%;
+        width: 35%;
+        left: 5%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-6{
+        margin-top: 230%;
+        width: 80%;
+        left: 10%;
+        transition: 0.2s;
+    }
+}
