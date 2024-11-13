@@ -1431,4 +1431,56 @@ section.destinations > div:hover p {
         left: 10%;
         transition: 0.2s;
     }
+
+    /* MARS */
+
+    #destination span{
+        font-size: 7rem;
+        margin-top: -15%;
+        transition: 0.2s;
+    }
+    p#mars-catch {
+        font-size: 0.5rem;
+        margin-top: 3%;
+    }
+    #destination-p{
+        margin-top: 30%;
+        transition: 0.2s;
+        font-size: 1rem;
+        background-color: rgba(146, 100, 60, 0.377);
+    }
+    #destination-p1{
+        margin-top: 93%;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+    #destination-p2{
+        margin-top: 150%;
+        transition: 0.2s;
+        font-size: 1rem;
+        background-color: rgba(146, 100, 60, 0.669);
+    }
+    #destination-p3{
+        margin-top: 220%;
+        left: 22%;
+        font-size: 1.1rem;
+    }
+    #destination-promo-video,
+    #destination-promo-video2 {
+        margin-top: 40%;
+        width: 40%;
 }
+    #destination-promo-video4{
+        width: 60%;
+        left: 5%;
+        margin-top: 190%;
+        transition: 0.2s;
+    }
+    #destination-promo-video3{
+        margin-top: 135%;
+        width: 60%;
+        left: 35%;
+        transition: 0.2s;
+    }
+}
+
