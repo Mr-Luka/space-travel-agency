@@ -1137,3 +1137,112 @@ section.destinations > div:hover p {
 
 }
 
+@media screen and (max-width: 900px){
+        EXODUS
+    .destination-exodus {
+        margin-top: -10%;
+    }
+    p#catch.catch-exodus {
+         margin-top: 18%;
+    }
+    
+    #destination-p-exodus1,
+    #destination-exodus2,
+    #destination-exodus3 {
+        font-size: 1.2rem;
+    }
+    #destination-p-exodus1{
+        width: 55%;
+        margin-top: 10%;
+    }
+    p#destination-exodus2{
+        width: 40%;
+        margin-top: 65%;
+    }
+    p#destination-exodus3{
+        margin-top: 120%;
+        left: 35%;
+    }
+    p#destination-exodus4{
+        font-size: 1.8rem;
+        margin-top: 210%;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    #destination-promo-video-exodus-1{
+        margin-top: 123%;
+        left: 5%;
+    }
+    #destination-promo-video-exodus-2{
+        margin-top: 40%;
+        left: 5%;
+    }
+    #destination-promo-video-exodus-3{
+        margin-top: 110%;
+        left: 45%;
+    }
+    #destination-promo-video-exodus-4 {
+        margin-top: 165%;
+        width: 80%;
+        left: 10%;
+    }
+
+    /* PLANTIA */
+    .plantia-segment {
+        margin-top: -5%;
+    }
+    
+    p#catch.plantia-catch {
+        font-size: 1rem;
+        margin-top: 19%;
+        transition: 0.2s;
+    }
+    #destination-plantia,
+    #destination-plantia-1,
+    #destination-plantia-2 {
+        font-size: 1.1rem;
+        transition: 0.2s;
+    }
+    #destination-plantia-1,
+    #destination-plantia-2{
+        margin-top: 75%;
+        transition: 0.2s;
+    }
+
+    #destination-plantia{
+        margin-top: 15%;
+        transition: 0.2s;
+    }
+    #destination-plantia-3 {
+        margin-top: 210%;
+    }
+    #destination-promo-video-plantia-1{
+        margin-top: 160%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-2{
+        margin-top: 195%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-3{
+        margin-top: 160%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-4{
+        margin-top: 117%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-5{
+        margin-top: 155%;
+        width: 22%;
+        left: 40%;
+        transition: 0.2s;
+    }
+    #destination-promo-video-plantia-6{
+        margin-top: 82%;
+        transition: 0.2s;
+    }
+    
+    
+    
