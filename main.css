@@ -662,3 +662,112 @@ section.destinations > div:hover p {
 
 
 
+ /*          P L A N T I A   - DESTINATION      */
+#destination-plantia,
+#destination-plantia-1,
+#destination-plantia-2,
+#destination-plantia-3 {
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.7rem;
+    background-color: rgba(2, 104, 19, 0.291);
+    backdrop-filter: blur(1px);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: rgba(115, 140, 165, 0.556) 11px 6px 2rem 0px;
+}
+
+
+ #destination-plantia {
+    position: absolute;
+    z-index: 2;
+    width: 70%;
+    margin-top: 10%;
+    left: 15%;
+    padding: 1rem 0.2rem 0.2rem 0.2rem;
+    text-align: center;
+    animation: fadeUp 5000ms ease-in-out forwards;
+}
+
+#destination-plantia-1 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 67%;
+    width: 30%;
+    left: 5%;
+}
+#destination-plantia-2 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 65%;
+    width: 30%;
+    left: 65%;
+}
+#destination-plantia-3 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 180%;
+    /* left: 35%; */
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#destination-promo-video-plantia-1,
+#destination-promo-video-plantia-2,
+#destination-promo-video-plantia-3,
+#destination-promo-video-plantia-4,
+#destination-promo-video-plantia-5,
+#destination-promo-video-plantia-6 {
+    position: absolute;
+    z-index: 3;
+    width: 20%;
+    margin-top: 15%;
+    border-radius: 30px;
+    border: 10px solid rgba(255, 255, 255, 0.191);
+    box-shadow: rgba(4, 166, 42, 0.484) 11px 6px 2rem -3px;  
+}
+#destination-promo-video-plantia-1:hover,
+#destination-promo-video-plantia-2:hover,
+#destination-promo-video-plantia-3:hover,
+#destination-promo-video-plantia-4:hover,
+#destination-promo-video-plantia-5:hover,
+#destination-promo-video-plantia-6:hover {
+    transition: transform 0.4s;
+    border: none;
+    box-shadow: rgb(3, 159, 161) 11px 6px 7rem -3px;
+}
+#destination-promo-video-plantia-1{
+    left: 7%;
+    margin-top: 120%;
+    width: 30%;
+}
+#destination-promo-video-plantia-2{
+    left: 27%;
+    margin-top: 152%;
+    width: 50%;
+}
+#destination-promo-video-plantia-3{
+    left: 65%;
+    margin-top: 120%;
+    width: 30%;
+}
+#destination-promo-video-plantia-4{
+    left: 35%;
+    width: 30%;
+    margin-top: 85%;
+}
+#destination-promo-video-plantia-5{
+    left: 41%;
+    margin-top: 125%;
+    width: 20%;
+}
+#destination-promo-video-plantia-6{
+    left: 15%;
+    margin-top: 50%;
+    width: 70%;
+}
+
+
+
+
+ 
