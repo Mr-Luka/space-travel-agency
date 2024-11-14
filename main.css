@@ -976,7 +976,7 @@ section.destinations > div:hover p {
     margin-top: 25%;
 }
 .general {
-    background-color: rgba(45, 72, 102, 0.303);
+    background-color: rgba(45, 102, 47, 0.821);
     border-radius: 20px;
 }
 
@@ -996,37 +996,76 @@ img.generals {
     background-size: cover;
     width: 20%;
 }
-#main-general{
-    width: 25%;
-    position: absolute;
-    margin-top: 10%;
-    left: 35%;
-}
+
 #general-info-1 {
     position: absolute;
+    z-index: 1;
     margin-top: 19%;
-    left: 2%;
-    width: 30%;
+    left: 5%;
+    width: 35%;
+    background-color: rgba(4, 20, 143, 0.414);
+    padding: 2rem 5rem 2rem 2rem;
+    border-radius: 20px;
+    animation: fadeRight 2000ms ease-in-out forwards;
+}
+#general-info-1:hover {
+    background-color: rgba(4, 20, 143, 0.5);
+    transition: transform 0.4s;
+    border: none;
+    box-shadow: rgba(143, 4, 4, 0.5) 11px 6px 7rem -3px;
+
 }
 #general-info-2{
     position: absolute;
-    margin-top: 98%;
+    margin-top: 63%;
     width: 60%;
-    left: 10%;
+    left: 28%;
 }
 #general-info-3{
     position: absolute;
-    left: 27%;
-    margin-top: 130%;
+    left: 10%;
+    margin-top: 97%;
+    width: 60%;
+}
+#general-info-4{
+    position: absolute;
+    margin-top: 125%;
+    left: 28%;
+    width: 60%;
+}
+#general-info-5{
+    position: absolute;
+    margin-top: 160%;
+    left: 10%;
     width: 60%;
 }
 #general-name-1 {
     font-size: 4rem;
     text-align: center;
     position: absolute;
+    z-index: 1;
     margin-top: 25%;
     right: 5%;
     font-weight: 800;
+    background-color: rgba(255, 0, 0, 0.201);
+    padding: 2rem 2rem 2rem 8rem;
+    border-radius: 80px;
+    animation: fadeRight 3000ms ease-in-out forwards;
+}
+#main-general{
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
+    left: 35%;
+    border-radius: 30px;
+    border: 10px solid rgba(255, 255, 255, 0.191);
+    box-shadow: rgba(166, 15, 4, 0.484) 21px 15px 7rem 15px;
+}
+#main-general:hover {
+    transition: transform 0.4s;
+    border: none;
+    box-shadow: rgb(128, 1, 133) 11px 6px 7rem -3px;
 }
 #second-general {
     position: absolute;
@@ -1045,8 +1084,28 @@ img.generals {
 }
 #fifth-general {
     position: absolute;
-    margin-top: 135%;
+    margin-top: 145%;
     right: 5%;
+}
+#second-general,
+#third-general,
+#fourth-general,
+#fifth-general {
+    border-radius: 30px;
+    border: 10px solid rgba(255, 255, 255, 0.191);
+    box-shadow: rgba(4, 66, 166, 0.484) 21px 15px 7rem 15px;
+}
+#second-general:hover,
+#third-general:hover,
+#fourth-general:hover,
+#fifth-general:hover{
+    transition: transform 0.4s;
+    border: none;
+    box-shadow: rgb(3, 159, 161) 11px 6px 7rem -3px;
+}
+span.span-general-name {
+    font-size: 3rem;
+    font-weight: 800;
 }
 
 /* Media Query for Tablets (768px to 1024px) */
