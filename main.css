@@ -772,7 +772,8 @@ section.destinations > div:hover p {
 
  /*          M A R S   - DESTINATION      */
 
-#destination-video{
+#destination-video,
+#technology-video{
     position: absolute;
     z-index: 1;
     background-position: center;
@@ -782,7 +783,8 @@ section.destinations > div:hover p {
 }
 
 .destination-segment,
-.crew-segment {
+.crew-segment,
+.tech-segment {
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -1108,6 +1110,41 @@ span.span-general-name {
     font-weight: 800;
 }
 
+
+/*       TECHNOLOGY         */
+
+#technology-video-rocket{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    margin-top: 15%;
+    z-index: 2;
+    border-radius: 30px;
+    border: 10px solid rgba(255, 255, 255, 0.191);
+    box-shadow: rgba(4, 166, 112, 0.484) 21px 15px 7rem 15px;
+}
+
+h2.tech-title,
+p.tech-p {
+    position: absolute;
+    z-index: 2;
+    margin-top: 530%;
+
+}
+
+.our-scientist {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    margin-top: 70%;
+}
+
+.suits {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    margin-top: 70%;
+}
 /* Media Query for Tablets (768px to 1024px) */
 @media screen and (max-width: 1314px) {
     .signup {
