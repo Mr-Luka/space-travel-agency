@@ -1012,7 +1012,7 @@ img.generals {
     background-color: rgba(4, 20, 143, 0.5);
     transition: transform 0.4s;
     border: none;
-    box-shadow: rgba(143, 4, 4, 0.5) 11px 6px 7rem -3px;
+    box-shadow: rgba(143, 4, 4, 0.48) 11px 6px 7rem -3px;
 
 }
 #general-info-2{
