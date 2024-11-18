@@ -230,6 +230,50 @@ label {
     color: #ccc;
 }
 
+/* scroll to accept */
+.scroll-to-accept-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h3.consent-form {
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: -32%;
+}
+.terms-and-conditions {
+    overflow: scroll;
+    width: 90%;
+    max-height: 20rem;
+    margin-top: 5rem;
+    background: #a0a0a028;
+    padding: 1.3rem;
+    border-radius: 30px;
+    margin-bottom: 10rem;
+}
+button.scroll-to-accept{
+    margin-top: 25%;
+    position: absolute;
+    z-index: 4;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 40px;
+    border: 3px solid white;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background: rgba(93, 218, 243, 0.575);
+}
+button.scroll-to-accept:hover {
+    box-shadow: rgb(0, 195, 255) 1px 5px 3rem 3px;
+}
+button.scroll-to-accept[disabled]{
+    opacity: 0.3;
+}
+button.scroll-to-accept[disabled]:hover {
+    background: rgba(93, 121, 243, 0.575);
+    box-shadow: rgb(0, 195, 255) 1px 5px 3rem 3px;
+}
+
 
 
 @keyframes fadeDown {
