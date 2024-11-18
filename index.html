@@ -24,7 +24,7 @@
     <title>Space Tourism</title>
 </head>
 <body>
-    <section class="sign-up ">
+    <section class="sign-up hidden">
         <div class="bg-video">
             <div class="content hidden">
                 <h1>Welcome to Space Tourism</h1>
@@ -59,7 +59,7 @@
                 <span class="material-symbol-outlined">x</span>
             </button>
         </div>
-        <div class="sign-up-form scroll-to-accept-form">
+        <div class="sign-up-form scroll-to-accept-form hidden">
             <h3 class="consent-form">Consent Form</h3>
             <div class="terms-and-conditions">
                 <p class="scroll-to-accept-p">
@@ -110,10 +110,13 @@
                 </p>
             </div>
             <button class="scroll-to-accept" disabled autocomplete="off">Accept</button>
+            <button class="close">
+                <span class="material-symbol-outlined">x</span>
+            </button>
         </div>
         </section>
 
-        <div class="wrapper-home hidden">
+        <div class="wrapper-home ">
             <div class="video-home">
                 <video id="home-video" src="./media/around-the-world.mp4" autoplay loop muted></video>
             </div>
@@ -131,15 +134,17 @@
             <div class="front-page">
                 <div class="intro-text">
                     <h2>Welcome to the Universe</h2>
-                    <p id="space"><span id="space-span">SPACE</span></p>
+                    <p id="space"><span id="space-span">Space</span></p>
                     <p class="cursor typewriter-animation">Join us on a journey through the cosmos<br> and explore the wonders of the universe.</p>
                 </div>
                 <div class="explore-div">
-                    <button class="explore" id="explore-btn">Explore</button>
+                    <button class="explore" id="explore-btn">Luka</button>
                 </div>
             </div>
         </div>
 
+
+        <!-- destination page: -->
         <div class="destination-options hidden">
             <div class="header">
                 <h1>Universe Tour</h1>
