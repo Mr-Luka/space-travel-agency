@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxygen+Mono&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxygen+Mono&family=Playpen+Sans:wght@100..800&family=Poiret+One&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="./script.js" defer></script>
+    <title>Space Tourism</title>
+</head>
+<body>
+    <div class="sign-up-form">
+            <form>
+                <div class="input-wrap">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" required /> 
+                </div>
+                <div class="input-wrap">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" required />
+                </div>
+                <div class="age">
+                    <small>I am over 21 years of age</small>
+                    <div>
+                        <small>No</small>
+                        <div class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                        </div>
+                        <small>Yes</small>
+                    </div>
+                </div>
+                <button class="btn" type="submit">Sign Me Up!</button>
+            </form>
+            <button class="close">
+                <span class="material-symbol-outlined">x</span>
+            </button>
+        </div>
+        
+        <div class="sign-up-form scroll-to-accept-form hidden">
+            <h3 class="consent-form">Consent Form</h3>
+            <div class="terms-and-conditions">
+                <p class="scroll-to-accept-p">
+                    Terms and Conditions for Space Travel Registration<br>
+    
+                    Effective Date: [todays date here] <br>
+    
+                    By registering for space travel with [Space Travel Agency Name], you acknowledge and agree to the following terms and conditions. Please read carefully before proceeding.
+                    <br>
+                    1. Eligibility for Travel<br>
+                    1.1. You must be at least 18 years old to register. Minors may travel only with parental or guardian consent and appropriate documentation.<br>
+                    1.2. You must complete all required medical screenings and meet fitness standards as determined by our medical team.<br>
+    
+                    2. Health and Safety
+                    2.1. Space travel involves inherent risks, including but not limited to changes in gravity, exposure to cosmic radiation, and physical demands.<br>
+                    2.2. You agree to disclose all relevant medical conditions during the registration process. Failure to do so may result in denial of travel or forfeiture of your ticket.<br>
+    
+                    3. Travel Documentation<br>
+                    3.1. All passengers must possess valid interplanetary travel identification (ITID) and any required visas or permits for their destination.<br>
+                    3.2. It is your responsibility to provide accurate personal information during registration.<br>
+    
+                    4. Cancellations and Refunds<br>
+                    4.1. Cancellations made more than 30 Earth days before the scheduled departure will be refunded minus a processing fee.<br>
+                    4.2. No refunds will be issued for cancellations made within 30 Earth days of departure or for no-shows.<br>
+                    4.3. Trips may be rescheduled or canceled by [Space Travel Agency Name] due to technical, environmental, or regulatory issues. In such cases, refunds or rebookings will be offered.<br>
+    
+                    5. Liability Waiver<br>
+                    5.1. By registering, you agree to release [Space Travel Agency Name], its affiliates, and crew from liability for injuries, damages, or losses incurred during the trip, except in cases of gross negligence.<br>
+                    5.2. You acknowledge that space travel involves risks that cannot be entirely mitigated, even with advanced technology.<br>
+    
+                    6. Behavioral Expectations<br>
+                    6.1. Passengers must follow all safety protocols and instructions provided by the crew.<br>
+                    6.2. Disruptive or dangerous behavior may result in removal from the spacecraft, and you will bear all associated costs.<br>
+    
+                    7. Data Privacy
+                    7.1. Personal data collected during registration will be used for operational, safety, and legal purposes only.<br>
+                    7.2. Data will be stored securely and shared only with authorized entities as required for travel.<br>
+    
+                    8. Governing Law
+                    8.1. These terms are governed by the laws of the Interstellar Coalition and relevant planetary jurisdictions.<br>
+    
+                    9. Acceptance
+                    9.1. By scrolling to accept and submitting your registration, you confirm that you have read, understood, and agreed to these terms and conditions.<br>
+    
+                    For questions or clarifications, please contact our customer support team at universeTravel@gmail.com.<br>
+                    <strong class="i-accept">I accept.</strong>
+                    <hr>
+                </p>
+            </div>
+            <button class="scroll-to-accept" disabled autocomplete="off">Accept</button>
+            <button class="close">
+                <span class="material-symbol-outlined">x</span>
+            </button>
+        </div>
+</body>
+</html>
