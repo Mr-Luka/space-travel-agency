@@ -1154,12 +1154,11 @@ h2.tech-title{
     position: absolute;
     margin-top: 110%;
     z-index: 2;
-    border: 1px solid red;
     width: 100%;
 }
 .scientist-working {
     position: absolute;
-    width: 30%;
+    width: 28%;
     border-radius: 30px;
     border: 10px solid rgba(255, 255, 255, 0.191);
     box-shadow: rgba(4, 166, 112, 0.484) 21px 15px 7rem 15px;
@@ -1176,17 +1175,39 @@ h3.h-scien-1,
  p.p-scien-1 {
     position: absolute;
     margin-top: 55%;
-    left: 13%;
     width: 30%;
 }
-
-
-#scientist2{
-    position: absolute;
+h3.h-scien-1 {
+    font-size: 2rem;
+    margin-top: 50%;
+    left: 16%;
 }
+p.p-scien-1 {
+    font-size: 1.2rem;
+    left: 8%;
+}
+
+h3.h-scien-2,
+ p.p-scien-2 {
+    position: absolute;
+    margin-top: 55%;
+    width: 30%;
+}
+h3.h-scien-2 {
+    font-size: 2rem;
+    margin-top: 50%;
+    left: 69%;
+}
+p.p-scien-2 {
+    font-size: 1.2rem;
+    left: 60%;
+}
+
+
 #scientist2 img{
     position: absolute;
     left: 58%;
+    margin-top: 5%;
 }
 
 .suit {
@@ -1199,7 +1220,7 @@ h3.h-scien-1,
     box-shadow: rgb(255, 123, 0) 11px 6px 2rem -3px;
 }
 .suit:hover {
-    transition: transform 0.4s;
+    transition: 0.5s;
     border: none;
     box-shadow: rgb(248, 192, 139) 11px 6px 7rem -3px;
 }
@@ -1211,6 +1232,34 @@ h3.h-scien-1,
 }
 #suit-3 {
     left: 70%;
+}
+
+
+button#technology-to-home {
+    position: absolute;
+    z-index: 3;
+    margin-top: 180%;
+    margin-bottom: 10rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 3px solid rgba(255, 255, 255, 0.33);
+    left: 45%;
+    background-color: blue;
+    border-radius: 50px;
+}
+button#technology-to-home:hover {
+    border: 3px solid rgba(76, 102, 247, 0.567);
+    background-color: rgba(0, 0, 255, 0.101);
+    box-shadow: rgb(139, 241, 248) 11px 6px 7rem -3px;
+    transition: 0.8s;
+}
+p.universe-logo {
+    position: absolute;
+    z-index: 3;
+    margin: 215rem 0 10rem 0;
+    font-size: 2rem;
+    left: 42%;
 }
 /* Media Query for Tablets (768px to 1024px) */
 @media screen and (max-width: 1314px) {
