@@ -257,7 +257,7 @@ h3.consent-form {
     margin-bottom: 10rem;
 }
 button.scroll-to-accept{
-    margin-top: 25%;
+    margin-top: 33%;
     position: absolute;
     z-index: 4;
     padding: 1rem 2rem 1rem 2rem;
@@ -1312,6 +1312,9 @@ p.universe-logo {
     font-size: 2rem;
     left: 42%;
 }
+
+
+
 /* Media Query for Tablets (768px to 1024px) */
 @media screen and (max-width: 1314px) {
     .signup {
@@ -1321,6 +1324,17 @@ p.universe-logo {
     .sign-up-form {
         left: 5%;
         max-width: 90%;
+    }
+
+    h3.consent-form{
+        margin-top: -50%;
+        transition: 0.2s;
+    }
+
+    button.scroll-to-accept{
+        margin-top: 45%;
+        margin-bottom: 0;
+         transition: 0.2s;
     }
 
     .header h1 {
@@ -1521,7 +1535,18 @@ p.universe-logo {
 }
 
 @media screen and (max-width: 900px){
-        EXODUS
+    h3.consent-form{
+        margin-top: -65%;
+        transition: 0.2s;
+    }
+
+    button.scroll-to-accept{
+        margin-top: 50%;
+        margin-bottom: 0;
+        transition: 0.2s;
+    }
+
+        /* EXODUS */
     .destination-exodus {
         margin-top: -10%;
     }
@@ -1677,6 +1702,16 @@ p.universe-logo {
         top: 20%;
         left: 5%;
         max-width: 90%;
+    }
+    h3.consent-form{
+        margin-top: -85%;
+        transition: 0.2s;
+    }
+
+    button.scroll-to-accept{
+        margin-top: 65%;
+        margin-bottom: 0;
+        transition: 0.2s;
     }
 
     .header {
