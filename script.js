@@ -13,10 +13,12 @@ let registration = {
     email: '',
 }
 
+if(signUpBtn){
 signUpBtn.addEventListener('click', ()=> {
     welcomeContent.classList.add('hidden');
     signUpForm.classList.remove('hidden')
 })
+};
 
 xButton.forEach(x => {
     x.addEventListener('click', ()=>{
@@ -41,13 +43,16 @@ function handleSignUp (e) {
     } else {
         registration.fullName = name;
         registration.email = emailLower;
+        localStorage.setItem('registration', JSON.stringify(registration));
+
         scrollToAcceptForm.classList.remove('hidden');
         signUpForm.classList.add('hidden');
-        console.log(registration);
+        console.log('Registration saved:', registration);
     }
 }
+if(signUpBtn2){
 signUpBtn2.addEventListener('click', handleSignUp)
-
+}
 
 
 function obCallback(payload){
@@ -61,16 +66,24 @@ function obCallback(payload){
     }
 }
 const terms = document.querySelector('.terms-and-conditions');
-const ob = new IntersectionObserver(obCallback, {
+
+if(terms && terms.lastElementChild){
+    const ob = new IntersectionObserver(obCallback, {
     root: terms,
     threshold: 1,
 });
-ob.observe(terms.lastElementChild);
+    ob.observe(terms.lastElementChild);
+}
 
 
 function acceptTerms(){
         acceptButton.addEventListener('click', ()=> {
              location.replace("./home-page.html")
+            console.log('its working')
+            console.log(registrationInfo)
         })
 }
+const registrationName = registration.fullName;
+const registrationEmail = registration.email
 
+export {registrationName, registrationEmail};
