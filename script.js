@@ -54,8 +54,10 @@ function obCallback(payload){
     if (payload[0].intersectionRatio === 1){
         acceptButton.disabled = false;
         console.log('Removing disabled')
+        acceptTerms()
     } else {
         acceptButton.disabled = true;
+
     }
 }
 const terms = document.querySelector('.terms-and-conditions');
@@ -64,4 +66,11 @@ const ob = new IntersectionObserver(obCallback, {
     threshold: 1,
 });
 ob.observe(terms.lastElementChild);
+
+
+function acceptTerms(){
+        acceptButton.addEventListener('click', ()=> {
+             location.replace("./home-page.html")
+        })
+}
 
