@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxygen+Mono&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxygen+Mono&family=Playpen+Sans:wght@100..800&family=Poiret+One&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="./script.js" defer></script>
+    <title>Space Tourism</title>
+</head>
+<body>
+    <section class="sign-up ">
+        <div class="bg-video">
+            <div class="content ">
+                <h1>Welcome to Space Tourism</h1>
+                <button class="btn" id="form-open-btn">Sign Up</button>
+            </div>
+            <video src="./media/home-page.mp4" autoplay loop muted></video>
+        </div>
+        <div class="sign-up-form hidden">
+            <form>
+                <div class="input-wrap">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" required /> 
+                </div>
+                <div class="input-wrap">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" required />
+                </div>
+                <div class="age">
+                    <small>I am over 21 years of age</small>
+                    <div>
+                        <small>No</small>
+                        <div class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                        </div>
+                        <small>Yes</small>
+                    </div>
+                </div>
+                <button class="btn" type="submit">Sign Me Up!</button>
+            </form>
+            <button class="close">
+                <span class="material-symbol-outlined">x</span>
+            </button>
+        </div>
+        <div class="sign-up-form scroll-to-accept-form hidden">
+            <h3 class="consent-form">Consent Form</h3>
+            <div class="terms-and-conditions">
+                <p class="scroll-to-accept-p">
+                    Terms and Conditions for Space Travel Registration<br>
+    
+                    Effective Date: [todays date here] <br>
+    
+                    By registering for space travel with [Space Travel Agency Name], you acknowledge and agree to the following terms and conditions. Please read carefully before proceeding.
+                    <br>
+                    1. Eligibility for Travel<br>
+                    1.1. You must be at least 18 years old to register. Minors may travel only with parental or guardian consent and appropriate documentation.<br>
+                    1.2. You must complete all required medical screenings and meet fitness standards as determined by our medical team.<br>
+    
+                    2. Health and Safety
+                    2.1. Space travel involves inherent risks, including but not limited to changes in gravity, exposure to cosmic radiation, and physical demands.<br>
+                    2.2. You agree to disclose all relevant medical conditions during the registration process. Failure to do so may result in denial of travel or forfeiture of your ticket.<br>
+    
+                    3. Travel Documentation<br>
+                    3.1. All passengers must possess valid interplanetary travel identification (ITID) and any required visas or permits for their destination.<br>
+                    3.2. It is your responsibility to provide accurate personal information during registration.<br>
+    
+                    4. Cancellations and Refunds<br>
+                    4.1. Cancellations made more than 30 Earth days before the scheduled departure will be refunded minus a processing fee.<br>
+                    4.2. No refunds will be issued for cancellations made within 30 Earth days of departure or for no-shows.<br>
+                    4.3. Trips may be rescheduled or canceled by [Space Travel Agency Name] due to technical, environmental, or regulatory issues. In such cases, refunds or rebookings will be offered.<br>
+    
+                    5. Liability Waiver<br>
+                    5.1. By registering, you agree to release [Space Travel Agency Name], its affiliates, and crew from liability for injuries, damages, or losses incurred during the trip, except in cases of gross negligence.<br>
+                    5.2. You acknowledge that space travel involves risks that cannot be entirely mitigated, even with advanced technology.<br>
+    
+                    6. Behavioral Expectations<br>
+                    6.1. Passengers must follow all safety protocols and instructions provided by the crew.<br>
+                    6.2. Disruptive or dangerous behavior may result in removal from the spacecraft, and you will bear all associated costs.<br>
+    
+                    7. Data Privacy
+                    7.1. Personal data collected during registration will be used for operational, safety, and legal purposes only.<br>
+                    7.2. Data will be stored securely and shared only with authorized entities as required for travel.<br>
+    
+                    8. Governing Law
+                    8.1. These terms are governed by the laws of the Interstellar Coalition and relevant planetary jurisdictions.<br>
+    
+                    9. Acceptance
+                    9.1. By scrolling to accept and submitting your registration, you confirm that you have read, understood, and agreed to these terms and conditions.<br>
+    
+                    For questions or clarifications, please contact our customer support team at universeTravel@gmail.com.<br>
+                    <strong class="i-accept">I accept.</strong>
+                    <hr>
+                </p>
+            </div>
+            <button class="scroll-to-accept" disabled autocomplete="off">Accept</button>
+            <button class="close">
+                <span class="material-symbol-outlined">x</span>
+            </button>
+        </div>
+        </section>
+
+
+    <!-- second home page -->
+        <div class="wrapper-home hidden">
+            <div class="video-home">
+                <video id="home-video" src="./media/around-the-world.mp4" autoplay loop muted></video>
+            </div>
+            <div class="header">
+                <h1>Universe Tour</h1>
+                <div class="nav-bar">
+                    <ul class="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="#crew">Crew</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="front-page">
+                <div class="intro-text">
+                    <h2>Welcome to the Universe</h2>
+                    <p id="space"><span id="space-span">Space</span></p>
+                    <p class="cursor typewriter-animation">Join us on a journey through the cosmos<br> and explore the wonders of the universe.</p>
+                </div>
+                <div class="explore-div">
+                    <button class="explore" id="explore-btn">Luka</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- destination page: -->
+        <div class="destination-options hidden">
+            <div class="header">
+                <h1>Universe Tour</h1>
+                <div class="nav-bar">
+                    <ul class="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="#crew">Crew</a></li>
+                        <li><a href="#contact">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="destinations">
+                <div>
+                    <video src="./media/exodus/water-planet.mp4"autoplay muted loop></video>
+                    <div class="text">
+                        <p class="sub-heading">
+                            Destination:
+                        </p>
+                            <h1 class="title-destination">
+                                EXODUS
+                            </h1>
+                            <p class="planet-preview-p">
+                                Welcome to Water Planet EXODUS.
+                                <br>Main Species: Naga
+                            </p>
+                            <a href="#" class="article-link">
+                                More Info
+                            </a>
+                    </div>
+                </div>
+                <div>
+                    <video src="./media/plantia/nature-planet.mp4"autoplay muted loop></video>
+                    <div class="text">
+                        <p class="sub-heading">
+                            Destination:
+                        </p>
+                            <h1 class="title-destination">
+                                PLANTIA
+                            </h1>
+                            <p class="planet-preview-p">
+                                Welcome to nature planet, merged with Plants.
+                                <br>Main Species: Plantians
+                            </p>
+                            <a href="#" class="article-link">
+                                More Info
+                            </a>
+                    </div>
+                </div>
+                <div>
+                    <video src="./media/mars/mars-planet.mp4"autoplay muted loop></video>
+                    <div class="text">
+                        <p class="sub-heading">
+                            Destination:
+                        </p>
+                            <h1 class="title-destination">
+                                MARS
+                            </h1>
+                            <p class="planet-preview-p">
+                                Welcome to Mars, our red planet sister.
+                                <br>Main Species: Second generation People (Martian)
+                            </p>
+                            <a href="#" class="article-link">
+                                More Info
+                            </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+<!--   EXODUS - Destination -->
+        <div class="wrapper-destination hidden">
+            <div class="header">
+                <h1>Universe Tour</h1>
+                <div class="nav-bar">
+                    <ul class="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="#crew">Crew</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="destination-div">
+                <div class="video-destination">
+                     <video id="destination-video" src="./media/exodus/water-planet.mp4" autoplay loop muted></video>
+                </div>
+                <div class="destination-segment exodus-segment">
+                    <div class="destination-info">
+                        <p id="destination" class="destination-exodus"><span>Exodus</span></p>
+                        <p id="catch" class="catch-exodus">A Journey Beyond Imagination</p>
+                        <p id="destination-p-exodus1">
+                            As one of our most sought-after destinations, <br>
+                            Exodus offers travelers an experience unlike any other.<br> With the Future Tourist Space Agency, you’ll journey to the Blue Planet in comfort and style, enjoying the safest and most affordable interplanetary travel.<br><br> Established since 2017, our agency is dedicated to making space exploration accessible and unforgettable.<br>
+                            <br>
+                        </p>
+                        <p id="destination-exodus2">
+                            What to Expect on Exodus:<br>
+                            Passengers can look forward to breathtaking underwater landscapes, from the towering<br>Canyon Eternal (the deepest point) to the vast, ancient valleys of Valles Exodus. Experience the thin, chill Exodus atmosphere, clean water and witness the pinkish-red skies, unlike anything on Earth.<br>
+                        </p> 
+                        <p id="destination-exodus3">Enjoy guided tours of past rover and landing sites, a Exodus sunset, and the unique geological formations that make this planet so mysterious and captivating.<br>
+                            With Us, You will Experience:<br>
+                            The highest safety standards in the galaxy.<br>
+                            Luxurious cabins for restful interplanetary journeys.<br>
+                            Professional space guides to enhance your Exodus adventure.<br>
+                        </p>
+                        <p id="destination-exodus4">Let us make your dream of visiting Exodus a reality!
+                        </p>
+                    </div>
+                    <div class="destination-promo">
+                         <video class="two-promo-vid" id="destination-promo-video-exodus-1" src="/media/exodus/under-water.mov" autoplay loop muted></video>
+                         <video class="two-promo-vid" id="destination-promo-video-exodus-2" src="./media/exodus/under-water-r.mov" autoplay loop muted></video>
+                    </div>
+                    <div class="destination-promo2">
+                         <video class="two-promo-vid" id="destination-promo-video-exodus-3" src="/media/exodus/underwater.mov" autoplay loop muted></video>
+                         <video class="two-promo-vid" id="destination-promo-video-exodus-4" src="./media/exodus/whales.mov" autoplay loop muted></video>
+                    </div>  
+                    <div class="bottom-page"></div>
+                </div>
+            </div>
+        </div>
+
+<!--          P L A N T I A - DESTINATION    -->
+        <div class="wrapper-destination hidden">
+            <div class="header">
+                <h1>Universe Tour</h1>
+                <div class="nav-bar">
+                    <ul class="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="#crew">Crew</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="destination-div">
+                <div class="video-destination">
+                     <video id="destination-video" src="./media/plantia/nature-planet.mp4" autoplay loop muted></video>
+                </div>
+                <div class="destination-segment plantia-segment">
+                    <div class="destination-info">
+                        <p id="destination" class="destination-plantia-title"><span>PLANTIA</span></p>
+                        <p id="catch" class="plantia-catch">A Journey Beyond Imagination</p>
+                        <p id="destination-plantia">
+                            As one of our most sought-after destinations, <br>
+                            Plantia offers travelers an experience unlike any other.<br> With the Future Tourist Space Agency, you’ll journey to the Green Planet in comfort and style, enjoying the safest and most affordable interplanetary travel.<br><br> Established since 2017, our agency is dedicated to making space exploration accessible and unforgettable.<br>
+                            <br>
+                        </p>
+                        <p id="destination-plantia-1">
+                            What to Expect on Plantia:<br>
+                            Passengers can look forward to breathtaking landscapes, from the towering<br>Exodia Forests (the solar system's biggest forest) to the vast, ancient valleys of Kaladria Rora. Experience the thin, chill Plantia atmosphere and witness the blue skies, unlike anything on Earth.<br>
+                        </p> 
+                        <p id="destination-plantia-2">Enjoy guided tours of past rover and landing sites, a Plantia sunset, and the unique geological formations that make this planet so mysterious and captivating.<br>
+                            With Us, You will Experience:<br>
+                            The highest safety standards in the galaxy.<br>
+                            Luxurious cabins for restful interplanetary journeys.<br>
+                            Professional space guides to enhance your Mars adventure.<br>
+                        </p>
+                        <p id="destination-plantia-3">Let us make your dream of visiting Mars a reality!
+                        </p>
+                    </div>
+                    <div class="destination-promo">
+                         <video class="two-promo-vid" id="destination-promo-video-plantia-1" src="/media/plantia/1.MOV" autoplay loop muted></video>
+                         <video class="two-promo-vid" id="destination-promo-video-plantia-2" src="./media/plantia/2.MOV" autoplay loop muted></video>
+                    </div>
+                    <div class="destination-promo2">
+                         <video class="two-promo-vid" id="destination-promo-video-plantia-3" src="/media/plantia/5.MOV" autoplay loop muted></video>
+                         <video class="two-promo-vid" id="destination-promo-video-plantia-4" src="./media/plantia/3.MOV" autoplay loop muted></video>
+                    </div> 
+                    <div class="destination-promo3">
+                         <video class="two-promo-vid" id="destination-promo-video-plantia-5" src="/media/plantia/4.MOV" autoplay loop muted></video>
+                         <video class="two-promo-vid" id="destination-promo-video-plantia-6" src="./media/plantia/forest.mov" autoplay loop muted></video>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+
+
+<!--           M A R S - DESTINATION          -->
+        <div class="wrapper-destination hidden">
+            <div class="header">
+                <h1>Universe Tour</h1>
+                <div class="nav-bar">
+                    <ul class="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="#crew">Crew</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="destination-div">
+                <div class="video-destination">
+                     <video id="destination-video" src="media/mars/mars.mp4" autoplay loop muted></video>
+                </div>
+                <div class="destination-segment">
+                    <div class="destination-info">
+                        <p id="destination"><span>MARS</span></p>
+                        <p id="catch">A Journey Beyond Imagination</p>
+                        <p id="destination-p">
+                            As one of our most sought-after destinations, <br>
+                            Mars offers travelers an experience unlike any other.<br> With the Future Tourist Space Agency, you’ll journey to the Red Planet in comfort and style, enjoying the safest and most affordable interplanetary travel.<br><br> Established since 2017, our agency is dedicated to making space exploration accessible and unforgettable.<br>
+                            <br>
+                        </p>
+                        <p id="destination-p1">
+                            What to Expect on Mars:<br>
+                            Passengers can look forward to breathtaking landscapes, from the towering<br>Olympus Mons (the solar system's tallest volcano) to the vast, ancient valleys of Valles Marineris. Experience the thin, chill Martian atmosphere and witness the pinkish-red skies, unlike anything on Earth.<br>
+                        </p> 
+                        <p id="destination-p2">Enjoy guided tours of past rover and landing sites, a Martian sunset, and the unique geological formations that make this planet so mysterious and captivating.<br>
+                            With Us, You will Experience:<br>
+                            The highest safety standards in the galaxy.<br>
+                            Luxurious cabins for restful interplanetary journeys.<br>
+                            Professional space guides to enhance your Mars adventure.<br>
+                        </p>
+                        <p id="destination-p3">Let us make your dream of visiting Mars a reality!
+                        </p>
+                    </div>
+                    <div class="destination-promo">
+                         <video class="two-promo-vid" id="destination-promo-video" src="/media/mars/mars-america.mp4" autoplay loop muted></video>
+                         <video class="two-promo-vid" id="destination-promo-video2" src="./media/mars/mars-hiking.mp4" autoplay loop muted></video>
+                    </div>
+                    <div class="destination-promo2">
+                         <video class="two-promo-vid" id="destination-promo-video3" src="/media/mars/mars-exploring.mp4" autoplay loop muted></video>
+                         <video class="two-promo-vid" id="destination-promo-video4" src="./media/mars/mars-walking.mp4" autoplay loop muted></video>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!-- MARS ENDS HERE -->
+
+        <div class="wrapper-destination hidden ">
+            <div class="header">
+                <h1>Universe Tour</h1>
+                <div class="nav-bar">
+                    <ul class="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="#crew">Crew</a></li>
+                        <li><a href="#contact">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="crew">
+                <div class="video-destination">
+                     <video id="destination-video" src="media/crew/space-station.mp4" autoplay loop muted></video>
+                </div>
+                <div class="crew-segment">
+                    <div class="crew-info">
+                        <p id="crew" class="typewriter-animation cursor">Meet our crew</p>
+                        <div class="general">
+                            <img class="generals" id="main-general" src="./media/crew/main-general.jpg">
+                            <p id="general-info-1" class="general-info">
+                                General Ludvig Honof is a legendary tactician who has served the Interstellar Coalition for 150 years. At 213 years old, he has lived through multiple generations of space warfare, his life extended by advanced cryosleep and longevity tech. Known for his stoic leadership and unmatched strategic mind, Honof is a cornerstone of humanity’s defense in the cosmos.
+                            </p>
+                            <p id="general-name-1">Space General<br>Ludvig Honof</p>
+                        </div>
+                        <div class="general">
+                            <img class="generals" id="second-general" src="./media/crew/second-general.png">
+                            <p id="general-info-2" class="general-info">
+                                <span class="span-general-name">Captain Ezra Kael</span><br>
+                                A seasoned Mars explorer, Kael is a master navigator and leads expeditions across the harsh Martian terrain. Known for his resilience, he’s often called "The Martian Ghost" for his ability to disappear and reappear across red deserts with precision.
+                            </p>
+                        </div>
+                        <div class="general">
+                            <img class="generals" id="third-general" src="./media/crew/third-general.png">
+                            <p id="general-info-3" class="general-info">
+                                <span class="span-general-name">Commander Iris Vale</span><br>
+                                Specialist in Plantia missions, Vale is a skilled biologist and survival expert, adept at navigating the dense, exotic jungles of the vibrant but hazardous planet. Her keen senses and adaptability have earned her the nickname "Plantia’s Whisper."
+                            </p>
+                        </div>
+                        <div class="general">
+                            <img class="generals" id="fourth-general" src="./media/crew/fourth-general.png">
+                            <p id="general-info-4" class="general-info">
+                                <span class="span-general-name">Lieutenant Jax Fenn</span><br>
+                                A tactical engineer, Fenn is responsible for critical supply runs and exploration on Exodus, a planet with extreme gravitational shifts. Known as "The Rock" by his crew, he’s grounded and reliable, always finding solutions to the planet’s unpredictable terrain.
+                            </p>
+                        </div>
+                        <div class="general">
+                            <img class="generals" id="fifth-general" src="./media/crew/fifth-general.png">
+                            <p id="general-info-5" class="general-info">
+                                <span class="span-general-name">Dr. Selene Moray</span><br>
+                                Chief medical officer, Moray has spent her career managing the physical toll of space travel on long-haul missions. Respected for her compassion and quick thinking, she ensures the crew’s well-being on their challenging journeys.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+ <!-- T E C H N O L O G Y -->
+         <div class="technology  hidden">
+            <div class="header">
+                <h1>Universe Tour</h1>
+                <div class="nav-bar">
+                    <ul class="nav-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="#crew">Crew</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="crew">
+                <div class="video-technology">
+                     <video id="technology-video" src="media/technology/technology.mp4" autoplay loop muted></video>
+                </div>
+                <div class="tech-segment">
+                    <div class="tech-info">
+                        <div class="tech">
+                            <video id="technology-video-rocket" src="media/technology/rocket.mp4" autoplay loop muted></video>
+                        </div>
+                        <h2 class="tech-title">Advanced Technology</h2>
+                        <p class="tech-p">Our spacecraft is equipped with cutting-edge technology, designed to withstand the harsh conditions of
+                        interstellar travel. From advanced propulsion systems to state-of-the-art life support, every aspect of
+                        our vessel is engineered for efficiency and safety.</p>
+                        <div class="our-scientist">
+                            <div class="scientist" id="scientist1">
+                                <h3 class="h-scien-1">Piere Zix</h3>
+                                <p class="p-scien-1">
+                                Chief Engineer, Zix is responsible for the design and maintenance of our spacecraft's propulsion systems.
+                                His expertise in advanced propulsion technologies has enabled us to reach previously inaccessible regions of
+                                the galaxy.
+                                </p>
+                                <img class="scientist-working" src="./media/technology/scientist-1.png">
+                            </div>
+                            <div class="scientist" id="scientist2">
+                                <h3 class="h-scien-2">Gadama Han</h3>
+                                <p class="p-scien-2">Our chief scientist, Han, is a renowned expert in exoplanetary geology
+                                and astrobiology. Her research has been instrumental in the discovery of
+                                new worlds and the development of our spacecraft's advanced propulsion
+                                systems.</p>
+                                <img class="scientist-working" src="./media/technology/scientist-2.png">
+                            </div>
+                        </div>
+                        <div class="suits">
+                            <img  class="suit" id="suit-1" src="./media/technology/space-suit-1.png">
+                            <img class="suit" id="suit-2" src="./media/technology/space-suit-2.png">
+                            <img class="suit" id="suit-3" src="./media/technology/space-suit-3.png">
+                        </div>
+                        <button id="technology-to-home">Home</button>
+                    </div>
+                </div>
+                <p class="universe-logo">Universe Tour</p>
+            </div>
+        </div>
+
+</body>
+</html>
