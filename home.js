@@ -1,4 +1,6 @@
 const registration = JSON.parse(localStorage.getItem('registration'));
+const homeButton = document.querySelector('#technology-to-home');
+
 
 const firstName = (registration.fullName).split(' ');
 console.log(firstName)
@@ -6,6 +8,7 @@ console.log(firstName)
 
 function welcome (){
     const welcomeName = document.querySelector('.front-page');
+    if(welcomeName){
     welcomeName.innerHTML = `
         <div class="intro-text">
             <h2>Welcome to the Universe<br> ${firstName[0]}</h2>
@@ -14,6 +17,13 @@ function welcome (){
         </div>
         <div class="explore-div">
             <button class="explore" id="explore-btn">${firstName[0]}</button>
-        </div>`
+        </div>`;
+    }
 }
 welcome()
+
+if(homeButton){
+homeButton.addEventListener('click', ()=>{
+    location.replace("./home-page.html")
+});
+}
