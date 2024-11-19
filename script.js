@@ -3,6 +3,7 @@ const welcomeContent = document.querySelector('.content');
 const signUpForm = document.querySelector('.sign-up-form')
 const nameInput = document.querySelector('input[name="name"]');
 const emailInput = document.querySelector('input[name="email"]');
+const scrollToAccept = document.querySelector('.scroll-to-accept-form');
 const signUpBtn2 = document.querySelector('button.btn2');
 console.log(nameInput);
 let name = [];
@@ -43,6 +44,8 @@ function handleSignUp (e) {
     } else {
         registration.fullName = name;
         registration.email = emailLower;
+        scrollToAccept.classList.remove('hidden');
+        signUpForm.classList.add('hidden');
         console.log(registration);
     }
         
