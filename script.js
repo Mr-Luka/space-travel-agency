@@ -78,12 +78,6 @@ if(terms && terms.lastElementChild){
 
 function acceptTerms(){
         acceptButton.addEventListener('click', ()=> {
-             location.replace("./home-page.html")
-            console.log('its working')
-            console.log(registrationInfo)
+            location.replace("./home-page.html")
         })
 }
-const registrationName = registration.fullName;
-const registrationEmail = registration.email
-
-export {registrationName, registrationEmail};
