@@ -118,10 +118,10 @@ input, button {
 
 .input-wrap input {
     border-bottom: 1px #878787 solid;
-    padding: 0.3em 0;
+    padding: 0.3em 0.3em;
     min-width: 300px;
     color: #33bdebdd;
-    font-size: 1.3em;
+    font-size: 1em;
     margin-top: 1.5rem;
 }
 
@@ -130,7 +130,8 @@ input, button {
     border-bottom: 1px #ff5e3a solid;
 }
 
-.sign-up-form .btn {
+.sign-up-form .btn,
+.sign-up-form .btn2{
     margin: 2em 0;
 }
 
@@ -204,7 +205,8 @@ label {
 .switch input:checked + .slider:before {
     left: 1.2em;
 }
-.btn {
+.btn,
+.btn2 {
     margin: 2em auto;
     display: block;
     padding: 0.5em 2em;
@@ -215,7 +217,8 @@ label {
     transition: 0.3s;
     box-shadow: rgb(0, 195, 255) 11px 6px 2rem -3px;
 }
-.btn:hover {
+.btn:hover,
+.btn2:hover {
     background: rgb(0, 195, 255);
     border: 1px solid rgb(0, 94, 255);
     box-shadow: rgba(198, 227, 103, 0.761) 18px 10px 20rem 5px;
