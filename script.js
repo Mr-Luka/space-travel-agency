@@ -1,5 +1,6 @@
 const signUpBtn = document.querySelector('#form-open-btn');
 const welcomeContent = document.querySelector('.content');
+const xButton = document.querySelectorAll('span.material-symbol-outlined');
 const signUpForm = document.querySelector('.sign-up-form')
 const nameInput = document.querySelector('input[name="name"]');
 const emailInput = document.querySelector('input[name="email"]');
@@ -18,6 +19,14 @@ signUpBtn.addEventListener('click', ()=> {
     signUpForm.classList.remove('hidden')
 })
 
+xButton.forEach(x => {
+    x.addEventListener('click', ()=>{
+    welcomeContent.classList.remove('hidden');
+    signUpForm.classList.add('hidden')
+    scrollToAccept.classList.add('hidden');
+})
+})
+
 
 function handleSignUp (e) { 
     e.preventDefault()
@@ -27,17 +36,7 @@ function handleSignUp (e) {
     const name = nameInput.value.trim();
     const emailLower = (emailInput.value.trim()).toLowerCase();
     const inputAge = document.querySelector('input[type="checkbox"]');
-    console.log(inputAge);
 
-    if (!acceptedName.test(name)){
-        alert('Please enter valid name')
-    }
-    if(!acceptedEmail.test(emailLower)){
-        alert('Please enter valid email')
-    }
-    if(!inputAge.checked){
-        alert('Please be 21 years or older')
-    }
 
     if (!acceptedName.test(name) || !acceptedEmail.test(emailLower) || !inputAge.checked){
         alert('Please fill out the registration form');
