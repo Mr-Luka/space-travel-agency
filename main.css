@@ -256,7 +256,7 @@ h3.consent-form {
     border-radius: 30px;
     margin-bottom: 10rem;
 }
-button.scroll-to-accept{
+button.scroll-to-accept-button{
     margin-top: 33%;
     position: absolute;
     z-index: 4;
@@ -267,13 +267,13 @@ button.scroll-to-accept{
     transition: all 0.2s;
     background: rgba(93, 218, 243, 0.575);
 }
-button.scroll-to-accept:hover {
+button.scroll-to-accept-button:hover {
     box-shadow: rgb(0, 195, 255) 1px 5px 3rem 3px;
 }
-button.scroll-to-accept[disabled]{
+button.scroll-to-accept-button[disabled]{
     opacity: 0.3;
 }
-button.scroll-to-accept[disabled]:hover {
+button.scroll-to-accept-button[disabled]:hover {
     background: rgba(93, 121, 243, 0.575);
     box-shadow: rgb(0, 195, 255) 1px 5px 3rem 3px;
 }

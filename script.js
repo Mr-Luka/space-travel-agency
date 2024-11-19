@@ -4,11 +4,10 @@ const xButton = document.querySelectorAll('span.material-symbol-outlined');
 const signUpForm = document.querySelector('.sign-up-form')
 const nameInput = document.querySelector('input[name="name"]');
 const emailInput = document.querySelector('input[name="email"]');
-const scrollToAccept = document.querySelector('.scroll-to-accept-form');
+const scrollToAcceptForm = document.querySelector('.scroll-to-accept-form');
 const signUpBtn2 = document.querySelector('button.btn2');
-console.log(nameInput);
-let name = [];
-let emailArray = [];
+const acceptButton = document.querySelector('.scroll-to-accept-button');
+
 let registration = {
     fullName: '',
     email: '',
@@ -23,7 +22,7 @@ xButton.forEach(x => {
     x.addEventListener('click', ()=>{
     welcomeContent.classList.remove('hidden');
     signUpForm.classList.add('hidden')
-    scrollToAccept.classList.add('hidden');
+    scrollToAcceptForm.classList.add('hidden');
 })
 })
 
@@ -37,17 +36,32 @@ function handleSignUp (e) {
     const emailLower = (emailInput.value.trim()).toLowerCase();
     const inputAge = document.querySelector('input[type="checkbox"]');
 
-
     if (!acceptedName.test(name) || !acceptedEmail.test(emailLower) || !inputAge.checked){
         alert('Please fill out the registration form');
     } else {
         registration.fullName = name;
         registration.email = emailLower;
-        scrollToAccept.classList.remove('hidden');
+        scrollToAcceptForm.classList.remove('hidden');
         signUpForm.classList.add('hidden');
         console.log(registration);
     }
-        
-
 }
 signUpBtn2.addEventListener('click', handleSignUp)
+
+
+
+function obCallback(payload){
+    if (payload[0].intersectionRatio === 1){
+        acceptButton.disabled = false;
+        console.log('Removing disabled')
+    } else {
+        acceptButton.disabled = true;
+    }
+}
+const terms = document.querySelector('.terms-and-conditions');
+const ob = new IntersectionObserver(obCallback, {
+    root: terms,
+    threshold: 1,
+});
+ob.observe(terms.lastElementChild);
+
