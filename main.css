@@ -408,6 +408,10 @@ li a:hover {
     color: white;
     animation: fadeRight 1700ms ease-in-out forwards;
 }
+
+.intro-text h2:hover {
+    color: #68b1d93c;
+}
 #space {
     position: absolute;
     z-index: 2;
@@ -433,7 +437,6 @@ li a:hover {
     z-index: 2;
     border-radius: 50%;
     padding: 2rem;
-    backdrop-filter: blur(5px);
 }
 
 #explore-btn{
@@ -443,11 +446,11 @@ li a:hover {
     color: rgba(255, 255, 255, 0.108);
     font-weight: 800;
     font-size: 3rem;
-    animation: reveal 3000ms ease-in-out forwards 200ms,
-             glow 2500ms linear infinite 2500ms;
+    animation: reveal 3000ms ease-in-out forwards 5000ms,
+             glow 5500ms linear infinite 2500ms;
 }
 #explore-btn:hover {
-    color: rgba(193, 253, 14, 0.39);
+    color: rgba(255, 255, 255, 0.709);
     cursor: pointer;
     scale: 1.2;
 }
