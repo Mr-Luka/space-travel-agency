@@ -401,12 +401,14 @@ li a:hover {
     position: absolute;
     z-index: 2;
     top: 35%;
-    left: 5%;
-    width: 40%;
+    left: 1%;
+    width: 70%;
     text-align: center;
     color: transparent
 }
 .intro-text h2{
+    position: absolute;
+    left: 5%;
     font-size: 3.5rem;
     color: white;
     animation: fadeRight 1700ms ease-in-out forwards;
@@ -422,10 +424,14 @@ li a:hover {
     animation: fadeDown 1700ms ease-in-out forwards;
     color: rgba(255, 255, 255, 0.151);
     font-family: "Orbitron", sans-serif; 
-    right: -155%;
+    right: -45%;
     top: 0%;
 }
-
+p.cursor.typewriter-animation{
+    position: absolute;
+    margin-top: 45%;
+    left: -15%;
+}
 
 .intro-text p {
     font-size: 1.3rem;
@@ -456,6 +462,9 @@ li a:hover {
     color: rgba(255, 255, 255, 0.709);
     cursor: pointer;
     scale: 1.2;
+    border-radius: 40px;
+    box-shadow: rgb(0, 191, 255) 11px 60px 20rem 10px;  
+
 }
 
 
@@ -1712,6 +1721,18 @@ p.universe-logo {
         margin-top: 65%;
         margin-bottom: 0;
         transition: 0.2s;
+    }
+
+    p.cursor.typewriter-animation{
+    margin-top: 75%;
+    transition: 0.2s;
+    left: 5%;
+    }
+    .intro-text h2{
+        margin-left: 10%;
+    }
+    button#explore-btn.explore{
+        margin-left: 5rem;
     }
 
     .header {
