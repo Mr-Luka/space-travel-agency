@@ -13,7 +13,7 @@ function welcome (){
         <div class="intro-text">
             <h2>Welcome to the Universe<br> ${firstName[0]}</h2>
             <p id="space"><span id="space-span">Space</span></p>
-            <p class="cursor typewriter-animation">Join us ${registration.fullName} on a journey through the cosmos<br> and explore the wonders of the universe.</p>
+            <p class="cursor typewriter-animation" id="join-us">Join us ${registration.fullName} on a journey through the cosmos<br> and explore the wonders of the universe.</p>
         </div>`;
     }
 }
