@@ -280,62 +280,20 @@ button.scroll-to-accept-button[disabled]:hover {
 
 
 
-@keyframes fadeDown {
-     0% {
-        opacity: 0;
-        transform: translateY(-150px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
-}
 
-@keyframes fadeLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(120px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
-}
-
-@keyframes fadeDown {
-     0% {
-        opacity: 0;
-        transform: translateY(-150px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
-}
-
-@keyframes fadeRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-120px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0)
-    }
-}
-
-@keyframes fadeUp {
-     0% {
-        opacity: 0;
-        transform: translateY(150px)
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
-}
 
 /* After sign-up HOME PAGE */
+
+#home-video{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
 
 .header {
     position: absolute;
@@ -389,82 +347,47 @@ li a:hover {
 }
 
 .front-page {
-    position: absolute;
-    z-index: 1;
-    top: 45%;
+    margin-top: -40rem;
     display: flex;
     align-items: center;
-    width: 90%;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .intro-text {
-    position: absolute;
-    z-index: 2;
-    top: 35%;
-    left: 1%;
-    width: 70%;
+    width: 100%;
     text-align: center;
-    color: transparent
+    display: flex;
+    justify-content: space-around;
 }
 .intro-text h2{
-    position: absolute;
-    left: 5%;
+    text-align: center;
     font-size: 3.5rem;
     color: white;
     animation: fadeRight 1700ms ease-in-out forwards;
+    margin-right: 15px;
 }
 
 .intro-text h2:hover {
+    transition: 0.3s;
     color: #68b1d93c;
 }
 #space {
-    position: absolute;
-    z-index: 2;
+    margin-top: 25rem;
     font-size: 10rem;
     animation: fadeDown 1700ms ease-in-out forwards;
     color: rgba(255, 255, 255, 0.151);
-    font-family: "Orbitron", sans-serif; 
-    right: -45%;
-    top: 0%;
+    font-family: "Orbitron", sans-serif;
 }
 p.cursor.typewriter-animation{
     position: absolute;
-    margin-top: 45%;
-    left: -15%;
+    margin-top: 35rem;
+    left: -23%;
 }
 
 .intro-text p {
     font-size: 1.3rem;
     margin-top: 20rem;
-}
-
-
-.explore-div {
-    position: absolute;
-    margin-top: 53rem;
-    right: 7%;
-    z-index: 2;
-    border-radius: 50%;
-    padding: 2rem;
-}
-
-#explore-btn{
-    position: relative;
-    z-index: 3;
-    background-color: none;
-    color: rgba(255, 255, 255, 0.108);
-    font-weight: 800;
-    font-size: 3rem;
-    animation: reveal 3000ms ease-in-out forwards 5000ms,
-             glow 5500ms linear infinite 2500ms;
-}
-#explore-btn:hover {
-    color: rgba(255, 255, 255, 0.709);
-    cursor: pointer;
-    scale: 1.2;
-    border-radius: 40px;
-    box-shadow: rgb(0, 191, 255) 11px 60px 20rem 10px;  
-
 }
 
 
@@ -483,14 +406,7 @@ p.cursor.typewriter-animation{
     typewriter 5s steps(50) 1s 1 normal both, 
     blinkingCursor 500ms steps(50) infinite normal;
 }
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
-}
-@keyframes blinkingCursor{
-  from { border-right-color: rgba(255,255,255,.75); }
-  to { border-right-color: transparent; }
-}
+
 
  /*     DESTINATION PREVIEW     */
  .planet-preview-p {
@@ -1322,6 +1238,57 @@ p.universe-logo {
     left: 42%;
 }
 
+
+
+
+@keyframes fadeDown {
+     0% {
+        opacity: 0;
+        transform: translateY(-150px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(120px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-120px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes fadeUp {
+     0% {
+        opacity: 0;
+        transform: translateY(150px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
 
 
 /* Media Query for Tablets (768px to 1024px) */
