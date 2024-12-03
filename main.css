@@ -550,13 +550,14 @@ section.destinations > div:hover p {
     object-fit: cover;
     object-position: center;
 }
+
 .destination-promo-wrapper{
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 }
 .destination-promo {
     display: flex;
@@ -590,7 +591,7 @@ section.destinations > div:hover p {
 }
 #destination-promo-video-exodus-4 {
     width: 90%;
-    margin-left: 8rem;
+    margin-left: 5%;
     margin-top: 10rem;
 }
 
@@ -1352,56 +1353,15 @@ p.universe-logo {
     }
 
     /* EXODUS */
-    .destination-exodus {
-        margin-top: -10%;
-    }
-    p#catch.catch-exodus {
-         margin-top: 20%;
-         font-size: 1rem;
-    }
-    
-    #destination-p-exodus1,
-    #destination-exodus2,
-    #destination-exodus3 {
+    p#destination-p-exodus1,
+    p#destination-exodus3{
+        width: 40%;
         font-size: 1.5rem;
     }
-    #destination-p-exodus1{
-        width: 50%;
-        margin-top: 10%;
-    }
-    #destination-exodus2{
-        width: 50%;
-        margin-top: 55%;
-    }
-    #destination-exodus3{
-        margin-top: 100%;
-        left: 35%;
-    }
-    #destination-exodus4{
-        font-size: 1.8rem;
-        margin-top: 180%;
-        width: 100%;
-        left: 0;
-        text-align: center;
-    }
-    #destination-promo-video-exodus-1{
-        margin-top: 123%;
-        left: 5%;
-    }
-    #destination-promo-video-exodus-2{
-        margin-top: 38%;
-        left: 5%;
-    }
-    #destination-promo-video-exodus-3{
-        margin-top: 88%;
-    }
-    #destination-promo-video-exodus-4 {
-        margin-top: 165%;
-        width: 80%;
-    }
+ 
 
     /* PLANTIA */
-    .plantia-segment {
+    /* .plantia-segment {
         margin-top: -5%;
     }
     
@@ -1438,11 +1398,11 @@ p.universe-logo {
     }
     #destination-promo-video-plantia-6{
         margin-top: 62%;
-    }
+    } */
 
 
     /* MARS */
-    #destination span{
+    /* #destination span{
         font-size: 12rem;
         transition: 0.2s;
     }
@@ -1476,10 +1436,10 @@ p.universe-logo {
         width: 60%;
         left: 21%;
         transition: 0.2s;
-    }
+    } */
 
     /* TECHNOLOGY SEGMENT  */
-    #technology-video-rocket{
+    /* #technology-video-rocket{
         margin-top: 35%;
         transition: 0.2s;
     }
@@ -1514,7 +1474,7 @@ p.universe-logo {
     p.universe-logo{
         margin-top: 230%;
         left: 40%;
-    }
+    } */
 
 }
 
@@ -1552,7 +1512,7 @@ p.universe-logo {
     }
 
         /* EXODUS */
-    .destination-exodus {
+    /* .destination-exodus {
         margin-top: -10%;
     }
     p#catch.catch-exodus {
@@ -1599,10 +1559,10 @@ p.universe-logo {
         margin-top: 165%;
         width: 80%;
         left: 10%;
-    }
+    } */
 
     /* PLANTIA */
-    .plantia-segment {
+    /* .plantia-segment {
         margin-top: -5%;
     }
     
@@ -1656,10 +1616,10 @@ p.universe-logo {
         margin-top: 82%;
         transition: 0.2s;
     }
-    
+     */
     
     /* MARS */
-    #destination span{
+    /* #destination span{
         font-size: 8.5rem;
         transition: 0.2s;
     }
@@ -1697,7 +1657,7 @@ p.universe-logo {
         width: 60%;
         left: 21%;
         transition: 0.2s;
-    }
+    } */
 }
 
 /* Media Query for Mobile (767px and below) */
