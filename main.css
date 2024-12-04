@@ -580,6 +580,7 @@ section.destinations > div:hover p {
     width: 30%;
     margin-top: 1rem;
     margin-left: 5%;
+    animation: fadeRight 4500ms ease-in-out forwards;
 }
 #destination-promo-video-exodus-2 {
     width: auto;
@@ -631,6 +632,7 @@ p#destination-exodus3 {
     width: 57%;
     margin-left: -15rem;
     margin-top: 5rem;
+    animation: fadeLeft 4500ms ease-in-out forwards;
 }
 p#destination-exodus4{
     font-family: "Poiret One", sans-serif;
@@ -643,6 +645,7 @@ p#destination-exodus4{
     background-color: none;
     border: none;
     box-shadow: none;
+    animation: fadeUp 4500ms ease-in-out forwards;
 }
 
 
@@ -1512,54 +1515,26 @@ p.universe-logo {
     }
 
         /* EXODUS */
-    /* .destination-exodus {
-        margin-top: -10%;
-    }
-    p#catch.catch-exodus {
-         margin-top: 18%;
-    }
-    
-    #destination-p-exodus1,
-    #destination-exodus2,
-    #destination-exodus3 {
+    p#destination-p-exodus1,
+    p#destination-exodus2{
+        width: 70%;
         font-size: 1.2rem;
     }
-    #destination-p-exodus1{
-        width: 55%;
-        margin-top: 10%;
-    }
     p#destination-exodus2{
-        width: 40%;
-        margin-top: 65%;
+        margin-top: 0rem;
     }
     p#destination-exodus3{
-        margin-top: 120%;
-        left: 35%;
+        font-size: 1.2rem;
+        width: 50%;
+        margin-top: 0rem;
     }
-    p#destination-exodus4{
-        font-size: 1.8rem;
-        margin-top: 210%;
-        width: 100%;
-        left: 0;
-        text-align: center;
-    }
-    #destination-promo-video-exodus-1{
-        margin-top: 123%;
-        left: 5%;
-    }
+    #destination-promo-video-exodus-1,
     #destination-promo-video-exodus-2{
-        margin-top: 40%;
-        left: 5%;
+        width: 40%;
     }
     #destination-promo-video-exodus-3{
-        margin-top: 110%;
-        left: 45%;
+        width: 60%;
     }
-    #destination-promo-video-exodus-4 {
-        margin-top: 165%;
-        width: 80%;
-        left: 10%;
-    } */
 
     /* PLANTIA */
     /* .plantia-segment {
@@ -1733,6 +1708,39 @@ p.universe-logo {
 
     .destinations {
         grid-template-columns: 1fr;
+    }
+
+          /* EXODUS */
+    .destination-segment {
+        margin-top: 25rem;
+    }    
+    #catch {
+        font-size: 1.2rem;
+    }
+    p#destination-p-exodus1,
+    p#destination-exodus2{
+        width: 60%;
+        border: 1px solid rgba(255, 255, 255, 0.147);
+        font-size: 1rem;
+    }
+    p#destination-exodus2{
+        margin-top: 0rem;
+    }
+    p#destination-exodus3{
+        font-size: 1rem;
+        width: 50%;
+        margin-top: 0rem;
+    }
+    #destination-promo-video-exodus-1,
+    #destination-promo-video-exodus-2{
+        width: 50%;
+    }
+    #destination-promo-video-exodus-3{
+        width: 60%;
+    }
+    p#destination-exodus4{
+        font-size: 1.5rem;
+        margin-top: 40rem;
     }
 
          /* PLANTIA */
